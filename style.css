@@ -56,6 +56,11 @@ a {
   margin-top: 0.25rem;
 }
 
+a:hover {
+  color: #0098df;
+  transition: 150ms ease-in-out;
+}
+
 p {
   margin-top: 2rem;
 }
@@ -100,8 +105,8 @@ ul li img {
 }
 
 .instagram:hover {
-  background: url(images/instabg.png);
   transition-duration: background 200ms;
+  background: url(images/instabg.png);
 }
 
 .twitter {
