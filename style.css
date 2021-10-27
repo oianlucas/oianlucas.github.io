@@ -1,0 +1,123 @@
+html, body {
+  --green: rgba(0, 126, 36, 0.9);
+  --grey: hsl(240, 9%, 89%);
+  margin: 0 0 0 0;
+  height: 100%;
+  font-family: 'roboto', sans-serif;
+  -webkit-font-smoothing: antialised;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: url(images/gradient.svg);
+  filter: blur(2000%);
+  background-color: var(--green);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--grey)
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+.avatar > img {
+  width: 10rem;
+  object-fit: cover;
+  border-radius: 80%;
+
+  box-shadow: 10px 5px 20px rgb(0, 0, 0);
+  /* clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); */
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+  margin-top: 0.25rem;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 3rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: .5rem;
+
+  
+  justify-content: center;
+}
+
+ul li img {
+  border-radius: 15%;
+}
+
+.linkedin {
+  transition: ease-in-out 0.2s;
+  background: #323238;
+}
+
+.linkedin:hover {
+  background: #2867b2;
+}
+
+.facebook {
+  transition: ease-in-out 0.2s;
+  background: #323238;
+}
+
+.facebook:hover {
+  background: #4267B2;
+}
+
+.instagram {
+  background: #323238;
+}
+
+.instagram:hover {
+  background: url(images/instabg.png);
+  transition-duration: background 200ms;
+}
+
+.twitter {
+  background: #323238;
+  transition: ease-in-out 0.2s;
+}
+
+.twitter:hover {
+  background: #1DA1F2;
+}
+
+.telegram {
+  background: #323238;
+  transition: ease-in-out 0.2s;
+}
+
+.telegram:hover {
+  background: #0088cc;
+}
