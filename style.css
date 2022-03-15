@@ -1,6 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+
 html, body {
-  --green: rgba(0, 126, 36, 0.9);
-  --grey: hsl(240, 9%, 89%);
+  --teal: #008080;
+  --grey: rgb(224, 224, 229);
   margin: 0 0 0 0;
   height: 100%;
   font-family: 'roboto', sans-serif;
@@ -15,7 +20,7 @@ body {
 main {
   background: url(images/gradient.svg);
   filter: blur(2000%);
-  background-color: var(--green);
+  background-color: var(--teal);
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -40,25 +45,40 @@ main {
   width: 10rem;
   object-fit: cover;
   border-radius: 80%;
-
-  box-shadow: 10px 5px 20px rgb(0, 0, 0);
+  box-shadow: 3px 3px 20px rgb(0, 0, 0);
   /* clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); */
 }
 
 h1 {
   font-size: 1.5rem;
   margin-top: 1.5rem;
+  text-shadow: 0.1px 0.1px 6px black;
 }
 
 a {
   color: var(--grey);
   text-decoration: none;
   margin-top: 0.25rem;
+  text-shadow: 0.5px 0.5px 8px black;
+}
+
+.github-icon path {
+  fill: var(--grey);
 }
 
 a:hover {
-  color: #0098df;
+  color: #141414;
+  text-shadow: none;
   transition: 150ms ease-in-out;
+}
+
+a:hover svg path {
+  fill: #141414;
+  transition: 150ms ease-in-out;
+}
+
+.bio {
+  text-shadow: 0.5px 0.5px 8px black;
 }
 
 p {
@@ -74,7 +94,6 @@ ul {
   display: flex;
   gap: .5rem;
 
-  
   justify-content: center;
 }
 
@@ -89,6 +108,7 @@ ul li img {
 
 .linkedin:hover {
   background: #2867b2;
+  scale: 1.1;
 }
 
 .facebook {
@@ -98,15 +118,17 @@ ul li img {
 
 .facebook:hover {
   background: #4267B2;
+  scale: 1.1;
 }
 
 .instagram {
   background: #323238;
+  transition: ease-in-out 0.2s;
 }
 
 .instagram:hover {
-  transition-duration: background 200ms;
-  background: url(images/instabg.png);
+  background: #d64273;
+  scale: 1.1;
 }
 
 .twitter {
@@ -116,6 +138,7 @@ ul li img {
 
 .twitter:hover {
   background: #1DA1F2;
+  scale: 1.1;
 }
 
 .telegram {
