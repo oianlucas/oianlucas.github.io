@@ -302,14 +302,14 @@ p {
 @keyframes animate {
 
     0%{
-        transform: translateY(0) rotate(0deg);
+        transform: translateY(0);
         opacity: 10;
         border-radius: 95%;
         filter: brightness(100%);
     }
 
     100%{
-        transform: translateY(-1000px) rotate(720deg);
+        transform: translateY(-1000px);
         opacity: 0;
         border-radius: 95%;
         filter: brightness(70%);
