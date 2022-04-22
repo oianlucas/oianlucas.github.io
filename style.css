@@ -62,6 +62,7 @@ a {
   text-decoration: none;
   margin-top: 0.25rem;
   text-shadow: 0.5px 0.5px 8px black;
+  transition: 150ms ease-in-out;
 }
 
 .github-icon path {
@@ -71,12 +72,10 @@ a {
 a:hover {
   color: #141414;
   text-shadow: none;
-  transition: 150ms ease-in-out;
 }
 
 a:hover svg path {
   fill: #141414;
-  transition: 150ms ease-in-out;
 }
 
 .bio {
