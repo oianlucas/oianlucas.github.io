@@ -428,13 +428,17 @@ p {
     overflow: hidden
   }
   
-  button {
+  #dark-mode-toggle {
+    margin-left: 15%;
+  }
+
+  #contact-btn {
     width: 45%;
     max-width: 172px;
     transform: none;
   }
   
-  button:hover {
+  #contact-btn:hover {
     transform: none;
   }
 
