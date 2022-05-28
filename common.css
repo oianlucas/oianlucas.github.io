@@ -1,11 +1,14 @@
+:root {
+  --teal: #008080;
+  --grey: rgb(224, 224, 229);
+}
+
 * {
   margin: 0;
   padding: 0;
   }
 
 html, body {
-  --teal: #008080;
-  --grey: rgb(224, 224, 229);
   margin: 0 0 0 0;
   height: 100vh;
   font-family: 'roboto', sans-serif;
@@ -14,6 +17,42 @@ html, body {
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
   overflow: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+  .area {
+    background: #008080;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    }
+    :root {
+      --dark-grey: #323238;
+    }
+
+.circles li{
+  position: absolute;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  }
+}
+
+#dark-mode-toggle {
+  font-family: inherit;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  padding: .5em;
+  display: flex;
+  align-items: center;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  margin: 10px 95%;
+  cursor: pointer;
 }
 
 body {
@@ -25,12 +64,6 @@ main {
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
-}
-
-.area{
-  background: #008080;  
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-  width: 100%;
 }
 
 
@@ -129,7 +162,7 @@ p {
 
 .linkedin {
   transition: ease-in-out 0.2s;
-  background: #323238;
+  background: var(--dark-grey);
 }
 
 .linkedin:hover {
@@ -139,7 +172,7 @@ p {
 
 .facebook {
   transition: ease-in-out 0.2s;
-  background: #323238;
+  background: var(--dark-grey);
 }
 
 .facebook:hover {
@@ -148,7 +181,7 @@ p {
 }
 
 .instagram {
-  background: #323238;
+  background: var(--dark-grey);
   transition: ease-in-out 0.2s;
 }
 
@@ -158,7 +191,7 @@ p {
 }
 
 .twitter {
-  background: #323238;
+  background: var(--dark-grey);
   transition: ease-in-out 0.2s;
 }
 
@@ -168,7 +201,7 @@ p {
 }
 
 .telegram {
-  background: #323238;
+  background: var(--dark-grey);
   transition: ease-in-out 0.2s;
 }
 
@@ -178,10 +211,10 @@ p {
 
 
 /* based on uiverse.io by @adamgiebl */
-button {
+#contact-btn {
   font-family: inherit;
   font-size: 20px;
-  background: #323238;
+  background: var(--dark-grey);
   color: white;
   padding: 0.7em 1.2em;
   display: flex;
@@ -195,42 +228,41 @@ button {
   cursor: pointer;
  }
  
- button span {
+ #contact-btn span {
   display: block;
   font-size: 16px;
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
  }
  
- button svg {
+ #contact-btn svg {
   display: block;
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
  }
 
- button a {
+ #contact-btn a {
    display: block;
-   background-color: red;
  }
  
- button:hover .svg-wrapper {
+ #contact-btn:hover .svg-wrapper {
   animation: fly-1 0.6s ease-in-out infinite alternate;
  }
  
- button:hover svg {
+ #contact-btn:hover svg {
   transform: translateX(2.1em) rotate(45deg) scale(1.1);
 }
 
-button:hover {
+#contact-btn:hover {
   background-color: #0088cc;
   transform: scale(1.05);
 }
 
-button:hover span {
+#contact-btn:hover span {
   transform: translateX(8em);
  }
  
- button:active {
+ #contact-btn:active {
   transform: scale(0.95);
  }
 
@@ -256,16 +288,6 @@ button:hover span {
     overflow: hidden;
 }
 
-.circles li{
-    position: absolute;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    animation: animate 25s linear infinite;
-    bottom: -150px;
-    
-}
 
 .circles li:nth-child(1){
     left: 2%;

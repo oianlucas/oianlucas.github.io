@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css"/>
+
+  <link rel="stylesheet" href="common.css">
+  <link href="light.css" rel="stylesheet" id="theme-link">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet"> 
@@ -27,11 +30,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Ian Lucas | Web Developer</title>
+
 </head>
 
 <body>
-  <main class="area">
 
+  <main class="area">
       <ul class="circles">
         <li></li>
         <li></li>
@@ -50,6 +54,9 @@
         <li></li>
         <li></li>
       </ul>
+
+      <button id="dark-mode-toggle" class="btn-toggle">☀️</button>
+
       <section id="area1">
       <div class="container">
       <div class="avatar">
@@ -86,7 +93,7 @@
         </ul>
       </div>
       
-      <button onClick="parent.open('https://bit.ly/WhatsAppIan')" >
+      <button id="contact-btn" onClick="parent.open('https://bit.ly/WhatsAppIan')" >
         <div class="svg-wrapper-1">
           <div class="svg-wrapper">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -108,5 +115,18 @@
   -->
   </main>
 
+  <script>
+    const btn = document.querySelector(".btn-toggle");
+    const theme = document.querySelector("#theme-link");
+    btn.addEventListener("click", function() {
+      // Swap out the URL for the different stylesheets
+      if (theme.getAttribute("href") == "light.css") {
+        (theme.href = "dark.css") && (document.getElementById("dark-mode-toggle").innerHTML = "🌙")
+      } else {
+        (theme.href = "light.css") && (document.getElementById("dark-mode-toggle").innerHTML = "☀️")
+      }
+    });
+  </script>
+  
 </body>
 </html>
