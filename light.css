@@ -431,8 +431,8 @@ p {
   }
 
   #contact-btn {
-    width: 45%;
-    max-width: 172px;
+    width: auto;
+    margin: 0 auto;
     transform: none;
   }
   
