@@ -282,121 +282,14 @@ p {
 }
 
 
-.circles li:nth-child(1){
-    left: 2%;
+@for $i from 1 through 20 {
+  .circles li:nth-child(#{$i}){
+    left: random(1080) + px;
     width: 80px;
     height: 80px;
     animation-delay: 0s;
     animation-duration: 7s;
-}
-
-
-.circles li:nth-child(2){
-    left: 10%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 2s;
-    animation-duration: 12s;
-}
-
-.circles li:nth-child(3){
-    left: 70%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 4s;
-}
-
-.circles li:nth-child(4){
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 0s;
-    animation-duration: 18s;
-}
-
-.circles li:nth-child(5){
-    left: 65%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 0s;
-}
-
-.circles li:nth-child(6){
-    left: 75%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 3s;
-}
-
-.circles li:nth-child(7){
-    left: 35%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 7s;
-}
-
-.circles li:nth-child(8){
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 15s;
-    animation-duration: 45s;
-}
-
-.circles li:nth-child(9){
-    left: 20%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-}
-
-.circles li:nth-child(10){
-    left: 85%;
-    width: 130px;
-    height: 130px;
-    animation-delay: 0s;
-    animation-duration: 10s;
-}
-
-.circles li:nth-child(11){
-    left: 15%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 0s;
-    animation-duration: 9s;
-}
-
-.circles li:nth-child(12){
-    left: 15%;
-    width: 10px;
-    height: 10px;
-    animation-delay: 0s;
-    animation-duration: 49s;
-}
-
-.circles li:nth-child(13){
-    left: 70%;
-    width: 22px;
-    height: 22px;
-    animation-delay: 0s;
-    animation-duration: 13s;
-}
-
-.circles li:nth-child(14){
-    left: 12%;
-    width: 2px;
-    height: 2px;
-    animation-delay: 0s;
-    animation-duration: 28s;
-}
-
-.circles li:nth-child(15){
-    left: 78%;
-    width: 40px;
-    height: 40px;
-    animation-delay: 0s;
-    animation-duration: 18s;
+  }
 }
 
 @keyframes animate {
