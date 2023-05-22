@@ -84,9 +84,7 @@ main section {
 .container {
   position: relative;
   max-width: 270px;
-  margin-top: -4rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
   color: var(--grey)
 }
